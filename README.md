@@ -1,0 +1,2 @@
+# Joemogy.ca
+MyPersonal3DWebsiteDevelopedByYoursTruly
