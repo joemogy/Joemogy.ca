@@ -1,2 +1,3 @@
 # Joemogy.ca
-MyPersonal3DWebsiteDevelopedByYoursTruly
+PersonalWebsite
+Joemogy.ca
