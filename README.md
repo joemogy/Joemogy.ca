@@ -1,4 +1,4 @@
-# Joemogy.ca [Joemogy.ca](https://www.joemogy.ca)
+# Joemogy.ca [Joemogy.ca](https://joemogy.ca)
 ## Joemogy.ca [Joemogy.ca](https://www.joemogy.ca)
 ### Joemogy.ca [Joemogy.ca](https://www.joemogy.ca)
 #### Joemogy.ca [Joemogy.ca](https://www.joemogy.ca) 
