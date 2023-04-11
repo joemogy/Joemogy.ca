@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Crypto Chart</title>
+    <meta name="description" content="chart page screen.">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./assets/style.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"
+        integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha"
+        crossorigin="anonymous"></script>
+    <script src="./assets/scriptsChart.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h1>Crypto King</h1>
+         <!-- navbar -->
+         <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./1000CryptoRanks.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./50CryptoCharts.html">Chart</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <nav class="navbar navbar-light mb-5">
+            <a class="navbar-brand" href="#">
+                Cryptocurrency Information Graph
+            </a>
+        </nav>
+        </div>
+        <div class="container">
+            <div class="justify-content-center">
+                <div class="justify-content-center">
+                    <!-- coin svg goes below -->
+                    <img src="#" width="30" height="30" class="d-inline-block align-top" alt="">
+                    <!-- coin name appended below -->
+                    <h1 class="display-4 d-inline-block" id="currency">Bitcoin</h1>
+                </div>
+                <div>
+                    <!-- select crypto currency to display on graph below show options-->
+                    
+                   <select id="cryptoList" class="custom-select custom-select-lg mb-3">
+                        <option value="0">Bitcoin</option>
+                        <option value="1">Ethereum</option>
+                        <option value="2">Tether USD</option>
+                        <option value="3">USDC</option>
+                        <option value="4">Binance Coin</option>
+                        <option value="5">XRP</option>
+                        <option value="6">Binance USD</option>
+                        <option value="7">Cardano</option>
+                        <option value="8">Solana</option>
+                        <option value="9">Dogecoin</option>
+                        <option value="10">Polkadot</option>
+                        <option value="11">Polygon</option>
+                        <option value="12">Shiba Inu</option>
+                        <option value="13">Dai</option>
+                        <option value="14">TRON</option>
+                        <option value="15">Wrapped Ether</option>
+                        <option value="16">Uniswap</option>
+                        <option value="17">Wrapped BTC</option>
+                        <option value="18">Avalanche</option>
+                        <option value="19">OKB</option>
+                        <option value="20">PancakeSwap</option>
+                        <option value="21">Litecoin</option>
+                        <option value="22">Cosmos</option>
+                        <option value="23">FTX Token</option>
+                        <option value="24">Ethereum Classic</option>
+                        <option value="25">Monero</option>
+                        <option value="26">Stellar</option>
+                        <option value="27">Algorand</option>
+                        <option value="28">Bitcoin BEP2</option>
+                        <option value="29">Cronos</option>
+                        <option value="30">Bitcoin Cash</option>
+                        <option value="31">EnergySwap</option>
+                        <option value="32">NEAR Protocol</option>
+                        <option value="33">Terra Classic</option>
+                        <option value="34">WEMIX TOKEN</option>
+                        <option value="35">Flow</option>
+                        <option value="36">Quant</option>
+                        <option value="37">Hedera</option>
+                        <option value="38">Filecoin	</option>
+                        <option value="39">VeChain</option>
+                        <option value="40">Huobi Token</option>
+                        <option value="41">Decentraland</option>
+                        <option value="42">Internet Computer (DFINITY)</option>
+                        <option value="43">Frax</option>
+                        <option value="44">Immutable X</option>
+                        <option value="45">Tezos</option>
+                        <option value="46">Elrond</option>
+                        <option value="47">The Sandbox</option>
+                        <option value="48">Chiliz</option>
+                        <option value="49">Lido DAO Token</option>
+                    </select>
+                </div>
+                <hr class="my-4">
+            </div>
+            <div>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <!-- dynamic current price -->
+                        <p class="changeFont d-inline-block mb-0">$</p>
+                        <p id="currentPrice" class="changeFont d-inline-block mb-0"> </p>
+                        <p id="percentChange" class="d-inline-block align-top"></p>
+                    </div>
+                    <div class="btn-group d-inline-block align-center" id="timeframeButtons">
+                        <!--Timeframe radio buttons-->
+                        <input type="radio" name="options" value="24h" class="btn-check" id="24h">
+                        <label class="btn btn-success" for="24h">24h</label>
+                        <input type="radio" name="options" value="7d" class="btn-check" id="7d">
+                        <label class="btn btn-success" for="7d">7d</label>
+                        <input type="radio" name="options" value="30d" class="btn-check" id="30d">
+                        <label class="btn btn-success" for="30d">30d</label>
+                        <input type="radio" name="options" value="1y" class="btn-check" id="1y">
+                        <label class="btn btn-success" for="1y">1y</label>
+                    </div>
+                </div>
+                <!-- Graph within canvas element -->
+                <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
+            </div>
+        </div>
+        <div id="infoContainer" class="container mt-4">
+            <!-- Crypto information -->
+        </div>
+    </div>
+   <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>
